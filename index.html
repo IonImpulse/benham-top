@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Benham's Top</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="css/main.css">
+    </head>
+    <body>
+        <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+        <div id="top-container">
+            <canvas id="top" width="800" height="800"></canvas>
+        </div>
+
+        <div>
+            <label for="num_sections">Number of Sections:</label>
+            <input type="range" id="num_sections" value="3" min="1" max="24">
+        
+            <label for="num_stripes">Number of Stripes per Section:</label>
+            <input type="range" id="num_stripes" value="3" min="1" max="24">
+        
+            <label for="stripe_width">Stripe Width (0-1):</label>
+            <input type="range" id="stripe_width" value="0.5" min="0" max="1" step="0.01">
+        
+            <label for="rpm">RPM:</label>
+            <input type="range" id="rpm" value="60" min="1" max="600">
+        
+            <button id="start">Start</button>
+            <button id="stop">Stop</button>
+        </div>
+    </body>
+
+    <script src="scripts/app.js"></script>
+</html>
